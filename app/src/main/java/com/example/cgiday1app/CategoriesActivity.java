@@ -3,6 +3,8 @@ package com.example.cgiday1app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 public class CategoriesActivity extends AppCompatActivity {
@@ -11,9 +13,14 @@ public class CategoriesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
-      /* String data = getIntent().getExtras().getString(MainActivity.MKEY);
-        TextView textView = findViewById(R.id.textViewdata);
-        textView.setText(data);*/
+        //put data into adapter
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_list_item_1, // layout for each row in listview
+                countries);//data
+        //set adapter on listview
+        ListView listView = findViewById(R.id.categories_listview);
+        listView.setAdapter(adapter);
+
 
     }
 }
