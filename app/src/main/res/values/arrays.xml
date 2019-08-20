@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ecommerce_categories">
+        <item>category 1</item>
+        <item>category 12</item>
+        <item>category 13</item>
+        <item>category 14</item>
+        <item>category 15</item>
+        <item>category 16</item>
+
+    </string-array>
+</resources>

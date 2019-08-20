@@ -6,14 +6,14 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class CategoriesActivity extends AppCompatActivity {
-
+    String[] countries = new String[]{"india","usa","uk"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
-       String data = getIntent().getExtras().getString(MainActivity.MKEY);
+      /* String data = getIntent().getExtras().getString(MainActivity.MKEY);
         TextView textView = findViewById(R.id.textViewdata);
-        textView.setText(data);
+        textView.setText(data);*/
 
     }
 }
