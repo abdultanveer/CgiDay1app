@@ -12,25 +12,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--step 2-->
-        <receiver
-            android:name=".SmsReceiver">
-            <intent-filter>
-                <action android:name="android.provider.telephony.SMS_RECEIVED"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </receiver>
-
-        <activity android:name=".CategoriesActivity" >
+        <activity android:name=".RecyclerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <!-- step 2 -->
+        <receiver android:name=".SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.telephony.SMS_RECEIVED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".CategoriesActivity">
 
         </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

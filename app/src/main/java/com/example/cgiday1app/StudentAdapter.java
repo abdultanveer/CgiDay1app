@@ -45,6 +45,7 @@ public class StudentAdapter extends BaseAdapter {
     public View getView(int position, View view, ViewGroup viewGroup) {
         LayoutInflater inflater = LayoutInflater.from(context);
        View view1 = inflater.inflate(R.layout.list_row,viewGroup,false); // creating a wooden plank
+
         TextView nameTv = view1.findViewById(R.id.tv_student_name);
         TextView usnTv = view1.findViewById(R.id.tv_student_usn);
         TextView semTv = view1.findViewById(R.id.tv_student_sem);
